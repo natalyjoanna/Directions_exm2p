@@ -1,0 +1,90 @@
+body {
+  color: #FEC208;
+  font-family: "Poppins", sans-serif;
+}
+
+.jumbotron {
+  background-color: transparent;
+  margin: 0;
+  padding: 10px;
+}
+.jumbotron h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.jumbotron h1,
+.jumbotron p {
+  text-align: center;
+}
+.jumbotron p {
+  font-size: 1em;
+}
+#googleMap {
+  width: 70%;
+  height: 600px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+i {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+.group {
+  padding-top: 10px;
+  padding-left: 4px;
+}
+.directions-icon {
+  font-size: xx-large;
+}
+
+.formulario {
+  width: 300px;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-fluid2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding-right: 20px;
+}
+
+.navbar ul li {
+  margin-right: 10px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.navbar ul li a:hover {
+  background-color: #555;
+}
+.navbar-icon {
+  margin-right: 500px;
+  font-size: 20px;
+  size: 20px;
+  padding-left: 20px;
+}

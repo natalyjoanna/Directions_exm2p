@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/ab2155e76b.js" crossorigin="anonymous"></script>
+  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  
+    <link rel="icon" type="image/png" href="logo.png" sizes="32x32" />
+    <link href='/directions.css' rel='stylesheet' />
+  
+    <title>McFinder - Encuentra tu sucursal</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html"><img class="navbar-icon" src="logo.png" alt="logo"/></a>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="https://www.mcdonalds.com.mx/nosotros">Acerca</a></li>
+            <li><a href="https://www.mcdonalds.com.mx/nosotros/contacto">Contacto</a></li>
+          </ul>
+    </div>
+
+    <div class="jumbotron">
+        <h1>Hola, ${nombre}, a continuación, tu sucursal más cercana.</h1>
+
+<script>
+  const nombre = localStorage.getItem('nombre');
+  document.querySelector('h1').innerHTML = `Hola, ${nombre}, a continuación, tu sucursal más cercana.`;
+</script>
+        <div class="container-fluid">
+        </div>
+        <div class="container-fluid">
+            <div id="googleMap"> </div>
+            <div id="output"> </div>
+        </div>
+    </div>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaCwVVwFPSoyFs1eoPG6nOH7vJ_ujuR8s&libraries=places"></script>
+    <script src="/directions.js" type="module"></script>
+</body>
+
+</html>
